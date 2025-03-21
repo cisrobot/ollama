@@ -1,0 +1,14 @@
+#### ollama_ros ####
+  올라마 실행 폴더
+
+
+#### 모델 경로 ####
+  mkdir -p ~/.ollama/models/command_bot
+  cd ~/.ollama/models/command_bot
+  nano Modelfile
+  >> 여기에 Modelfile 내용 복사 붙여넣기 후 저장
+
+  
+#### 메세지 예시 ####
+  ros2 topic pub --once /ollama_input std_msgs/String "data: '출발'"
+
